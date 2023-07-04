@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>uTOIP Dashboard - Telkomsel</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/media/image/favicon.png" />
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="vendors/bundle.css" type="text/css" />
+
+    <!-- Slick -->
+    <link rel="stylesheet" href="vendors/slick/slick.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="vendors/slick/slick-theme.css"
+      type="text/css"
+    />
+
+    <!-- Daterangepicker -->
+    <link
+      rel="stylesheet"
+      href="vendors/datepicker/daterangepicker.css"
+      type="text/css"
+    />
+
+    <!-- DataTable -->
+    <link
+      rel="stylesheet"
+      href="vendors/dataTable/datatables.min.css"
+      type="text/css"
+    />
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="vendors/prism/prism.css" type="text/css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css" />
+  </head>
+  <body id="body" class="dark small-navigation">
+    <!-- begin::preloader-->
+    <div class="preloader">
+      <div class="preloader-icon"></div>
+    </div>
+    <!-- end::preloader -->
+
+    <!-- BEGIN: Sidebar Group -->
+    <div class="sidebar-group">
+      <!-- BEGIN: User Menu -->
+      <div class="sidebar" id="user-menu">
+        <div
+          class="py-4 text-center"
+          data-backround-image="assets/media/image/image1.jpg"
+        >
+          <figure class="avatar avatar-lg mb-3 border-0">
+            <img
+              src="assets/media/image/user/admin-man.jpg"
+              class="rounded-circle"
+              alt="image"
+            />
+          </figure>
+          <h5 class="d-flex align-items-center justify-content-center">
+            Raihan
+          </h5>
+          <div>Role: <strong>Super Admin</strong></div>
+        </div>
+        <div class="card mb-0 card-body shadow-none">
+          <div class="mb-4">
+            <div class="list-group list-group-flush">
+              <a href="#" class="list-group-item p-l-r-0">Profile</a>
+              <a href="#" class="list-group-item p-l-r-0 d-flex">Followers</a>
+              <a href="#" class="list-group-item p-l-r-0 d-flex">
+                Notification <span class="badge badge-danger ml-auto">2</span>
+              </a>
+              <a
+                href="#"
+                class="list-group-item p-l-r-0"
+                data-sidebar-target="#settings"
+                >Settings</a
+              >
+              <a href="login.html" class="list-group-item p-l-r-0 text-danger"
+                >Sign Out!</a
+              >
+            </div>
+          </div>
+          <div class="mb-4">
+            <h6>About</h6>
+            <p class="text-muted mb-0">
+              I started my career here as a customer service representative and
+              quickly moved up the ranks. I took on management positions when
+              they became available, then became a supervisor when my manager
+              left. Now I'm senior administrator—which means that if you need
+              anything from me, you can just ask your boss!
+            </p>
+          </div>
+          <div class="mb-4">
+            <h6>Division</h6>
+            <p class="text-muted mb-0">IT Telkomsel</p>
+          </div>
+          <div class="mb-4">
+            <h6>Social Links</h6>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-sm btn-floating btn-facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-sm btn-floating btn-twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-sm btn-floating btn-dribbble">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-sm btn-floating btn-whatsapp">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="btn btn-sm btn-floating btn-linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END: User Menu -->
+    </div>
+    <!-- END: Sidebar Group -->
+
+    <!-- begin::main -->
+    <div class="layout-wrapper">
+      <!-- begin::header -->
+      <div class="header">
+        <div class="header-left">
+          <div class="navigation-toggler">
+            <a href="#" data-action="navigation-toggler">
+              <i data-feather="menu"></i>
+            </a>
+          </div>
+          <div class="header-logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="assets/media/image/logo.png"
+                alt="uTOIP - Telkomsel"
+              />
+              <img
+                class="logo-light"
+                src="assets/media/image/logo-light.png"
+                alt="uTOIP - Telkomsel"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="header-body">
+          <div class="header-body-left">
+            <div class="page-title" style="display: none">
+              <h4>.</h4>
+            </div>
+          </div>
+          <div class="header-body-right">
+            <ul class="navbar-nav">
+              <!-- begin::header fullscreen -->
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link"
+                  title="Fullscreen"
+                  data-toggle="fullscreen"
+                >
+                  <i class="maximize" data-feather="maximize"></i>
+                  <i class="minimize" data-feather="minimize"></i>
+                </a>
+              </li>
+              <!-- end::header fullscreen -->
+
+              <!-- begin::background mode -->
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  onclick="toggleDarkLight()"
+                  class="nav-link"
+                  title="dark/light mode"
+                >
+                  <i data-feather="sun"></i>
+                </a>
+              </li>
+              <!-- end::background mode -->
+
+              <!-- begin::user menu -->
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link"
+                  title="User menu"
+                  data-sidebar-target="#user-menu"
+                >
+                  <span class="mr-2 d-sm-inline d-none">Raihan</span>
+                  <figure class="avatar avatar-sm">
+                    <img
+                      src="assets/media/image/user/admin-man.jpg"
+                      class="rounded-circle"
+                      alt="avatar"
+                    />
+                  </figure>
+                </a>
+              </li>
+              <!-- end::user menu -->
+
+              <!-- begin::logo Tsel -->
+              <li class="nav-item">
+                <img
+                  class="logo-tsel"
+                  src="assets/media/image/logo-tsel-light.svg"
+                  alt="Telkomsel"
+                />
+              </li>
+              <!-- end::logo Tsel -->
+            </ul>
+
+            <!-- begin::mobile header toggler -->
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item header-toggler">
+                <a href="#" class="nav-link">
+                  <i data-feather="arrow-down"></i>
+                </a>
+              </li>
+            </ul>
+            <!-- end::mobile header toggler -->
+          </div>
+        </div>
+      </div>
+      <!-- end::header -->
+
+      <div class="content-wrapper">
+        <!-- begin::navigation -->
+        <div class="navigation">
+          <div class="navigation-menu-tab">
+            <ul>
+              <li>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Dashboard"
+                  data-nav-target="#ecommerce"
+                >
+                  <i data-feather="grid"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Components"
+                  data-nav-target="#components"
+                >
+                  <i data-feather="layers"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Forms"
+                  data-nav-target="#forms"
+                >
+                  <i data-feather="edit-3"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Plugins"
+                  data-nav-target="#plugins"
+                >
+                  <i data-feather="gift"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Pages"
+                  data-nav-target="#pages"
+                >
+                  <i data-feather="copy"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Administrator"
+                  data-nav-target="#user"
+                >
+                  <i data-feather="users"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="Google"
+                >
+                  <i data-feather="external-link"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation-menu-body">
+            <div class="navigation-menu-group">
+              <div id="ecommerce">
+                <ul>
+                  <li class="navigation-divider d-flex align-items-center">
+                    <i class="mr-2" data-feather="grid"></i>CONSOLIDATED
+                    DASHBOARD
+                  </li>
+                  <li>
+                    <a href="#">Gross Rev. Performance</a>
+                    <ul>
+                      <li><a href="index.html">General Performance</a></li>
+                      <li><a href="#">Dashboard 01</a></li>
+                      <li><a href="#">Dashboard 02</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Rev. Driver Performance</a></li>
+                  <li><a href="#">Cities & Subdistrics Performance</a></li>
+                  <li><a href="#">Business KPI</a></li>
+                </ul>
+              </div>
+              <div id="user">
+                <ul>
+                  <li class="navigation-divider d-flex align-items-center">
+                    <i class="mr-2" data-feather="users"></i> Administrator
+                  </li>
+                  <li>
+                    <a href="#">User Management</a>
+                  </li>
+                  <li>
+                    <a href="#">Role Management</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="components">
+                <ul>
+                  <li class="navigation-divider d-flex align-items-center">
+                    <i class="mr-2" data-feather="layers"></i> Components
+                  </li>
+                  <li>
+                    <a href="#">Basic Components</a>
+                    <ul>
+                      <li>
+                        <a href="alert.html">Alerts</a>
+                      </li>
+                      <li>
+                        <a href="accordion.html">Accordion</a>
+                      </li>
+                      <li>
+                        <a href="buttons.html">Buttons</a>
+                      </li>
+                      <li>
+                        <a href="pagination.html">Pagination</a>
+                      </li>
+                      <li>
+                        <a href="progress.html">Progress</a>
+                      </li>
+                      <li>
+                        <a href="modal.html">Modal</a>
+                      </li>
+                      <li>
+                        <a href="tab.html">Tab</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Tables</a>
+                    <ul>
+                      <li>
+                        <a href="basic-tables.html">Basic Tables</a>
+                      </li>
+                      <li>
+                        <a href="responsive-tables.html">Responsive Tables</a>
+                      </li>
+                      <li>
+                        <a class="active" href="dataTable.html">Datatable</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="icons.html">Icons</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="forms">
+                <ul>
+                  <li class="navigation-divider d-flex align-items-center">
+                    <i class="mr-2" data-feather="edit-3"></i> Forms
+                  </li>
+                  <li>
+                    <a href="#">Basic Forms</a>
+                  </li>
+                  <li>
+                    <a href="#">Advanced Forms</a>
+                  </li>
+                  <li>
+                    <a href="#">Form Validation</a>
+                  </li>
+                  <li>
+                    <a href="#">Form Wizard</a>
+                  </li>
+                  <li>
+                    <a href="#">File Upload</a>
+                  </li>
+                  <li>
+                    <a href="#">Datepicker</a>
+                  </li>
+                  <li>
+                    <a href="#">Timepicker</a>
+                  </li>
+                  <li>
+                    <a href="#">Colorpicker</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="plugins">
+                <ul>
+                  <li class="navigation-divider d-flex align-items-center">
+                    <i class="mr-2" data-feather="gift"></i> Plugins
+                  </li>
+                  <li>
+                    <a href="sweet-alert.html">Sweet Alert</a>
+                  </li>
+                  <li>
+                    <a href="tour.html">Tour</a>
+                  </li>
+                </ul>
+              </div>
+              <div id="pages">
+                <ul>
+                  <li class="navigation-divider d-flex align-items-center">
+                    <i class="mr-2" data-feather="copy"></i> Pages
+                  </li>
+                  <li>
+                    <a href="#">Error Pages</a>
+                    <ul>
+                      <li><a href="404.html" target="_blank">404</a></li>
+                      <li><a href="503.html" target="_blank">503</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="blank-page.html">Blank Page</a>
+                  </li>
+                  <li>
+                    <a href="#">Menu Level</a>
+                    <ul>
+                      <li>
+                        <a href="#">Menu Level</a>
+                        <ul>
+                          <li>
+                            <a href="#">Menu Level </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end::navigation -->
+
+        <div class="content-body">
+          <div class="content">
+            <div class="page-header">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="#">Tables</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Datatable
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <table
+                          id="example1"
+                          class="table table-striped table-bordered"
+                        >
+                          <thead class="thead-dark">
+                            <tr>
+                              <th>Name</th>
+                              <th>Position</th>
+                              <th>Office</th>
+                              <th>Age</th>
+                              <th>Start date</th>
+                              <th>Salary</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Tiger Nixon</td>
+                              <td>System Architect</td>
+                              <td>Edinburgh</td>
+                              <td>61</td>
+                              <td>2011/04/25</td>
+                              <td>$320,800</td>
+                            </tr>
+                            <tr>
+                              <td>Garrett Winters</td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>63</td>
+                              <td>2011/07/25</td>
+                              <td>$170,750</td>
+                            </tr>
+                            <tr>
+                              <td>Ashton Cox</td>
+                              <td>Junior Technical Author</td>
+                              <td>San Francisco</td>
+                              <td>66</td>
+                              <td>2009/01/12</td>
+                              <td>$86,000</td>
+                            </tr>
+                            <tr>
+                              <td>Cedric Kelly</td>
+                              <td>Senior Javascript Developer</td>
+                              <td>Edinburgh</td>
+                              <td>22</td>
+                              <td>2012/03/29</td>
+                              <td>$433,060</td>
+                            </tr>
+                            <tr>
+                              <td>Airi Satou</td>
+                              <td>Accountant</td>
+                              <td>Tokyo</td>
+                              <td>33</td>
+                              <td>2008/11/28</td>
+                              <td>$162,700</td>
+                            </tr>
+                            <tr>
+                              <td>Brielle Williamson</td>
+                              <td>Integration Specialist</td>
+                              <td>New York</td>
+                              <td>61</td>
+                              <td>2012/12/02</td>
+                              <td>$372,000</td>
+                            </tr>
+                            <tr>
+                              <td>Herrod Chandler</td>
+                              <td>Sales Assistant</td>
+                              <td>San Francisco</td>
+                              <td>59</td>
+                              <td>2012/08/06</td>
+                              <td>$137,500</td>
+                            </tr>
+                            <tr>
+                              <td>Rhona Davidson</td>
+                              <td>Integration Specialist</td>
+                              <td>Tokyo</td>
+                              <td>55</td>
+                              <td>2010/10/14</td>
+                              <td>$327,900</td>
+                            </tr>
+                            <tr>
+                              <td>Colleen Hurst</td>
+                              <td>Javascript Developer</td>
+                              <td>San Francisco</td>
+                              <td>39</td>
+                              <td>2009/09/15</td>
+                              <td>$205,500</td>
+                            </tr>
+                            <tr>
+                              <td>Sonya Frost</td>
+                              <td>Software Engineer</td>
+                              <td>Edinburgh</td>
+                              <td>23</td>
+                              <td>2008/12/13</td>
+                              <td>$103,600</td>
+                            </tr>
+                            <tr>
+                              <td>Jena Gaines</td>
+                              <td>Office Manager</td>
+                              <td>London</td>
+                              <td>30</td>
+                              <td>2008/12/19</td>
+                              <td>$90,560</td>
+                            </tr>
+                            <tr>
+                              <td>Quinn Flynn</td>
+                              <td>Support Lead</td>
+                              <td>Edinburgh</td>
+                              <td>22</td>
+                              <td>2013/03/03</td>
+                              <td>$342,000</td>
+                            </tr>
+                            <tr>
+                              <td>Charde Marshall</td>
+                              <td>Regional Director</td>
+                              <td>San Francisco</td>
+                              <td>36</td>
+                              <td>2008/10/16</td>
+                              <td>$470,600</td>
+                            </tr>
+                            <tr>
+                              <td>Haley Kennedy</td>
+                              <td>Senior Marketing Designer</td>
+                              <td>London</td>
+                              <td>43</td>
+                              <td>2012/12/18</td>
+                              <td>$313,500</td>
+                            </tr>
+                            <tr>
+                              <td>Tatyana Fitzpatrick</td>
+                              <td>Regional Director</td>
+                              <td>London</td>
+                              <td>19</td>
+                              <td>2010/03/17</td>
+                              <td>$385,750</td>
+                            </tr>
+                            <tr>
+                              <td>Michael Silva</td>
+                              <td>Marketing Designer</td>
+                              <td>London</td>
+                              <td>66</td>
+                              <td>2012/11/27</td>
+                              <td>$198,500</td>
+                            </tr>
+                            <tr>
+                              <td>Paul Byrd</td>
+                              <td>Chief Financial Officer (CFO)</td>
+                              <td>New York</td>
+                              <td>64</td>
+                              <td>2010/06/09</td>
+                              <td>$725,000</td>
+                            </tr>
+                            <tr>
+                              <td>Gloria Little</td>
+                              <td>Systems Administrator</td>
+                              <td>New York</td>
+                              <td>59</td>
+                              <td>2009/04/10</td>
+                              <td>$237,500</td>
+                            </tr>
+                            <tr>
+                              <td>Bradley Greer</td>
+                              <td>Software Engineer</td>
+                              <td>London</td>
+                              <td>41</td>
+                              <td>2012/10/13</td>
+                              <td>$132,000</td>
+                            </tr>
+                            <tr>
+                              <td>Dai Rios</td>
+                              <td>Personnel Lead</td>
+                              <td>Edinburgh</td>
+                              <td>35</td>
+                              <td>2012/09/26</td>
+                              <td>$217,500</td>
+                            </tr>
+                            <tr>
+                              <td>Jenette Caldwell</td>
+                              <td>Development Lead</td>
+                              <td>New York</td>
+                              <td>30</td>
+                              <td>2011/09/03</td>
+                              <td>$345,000</td>
+                            </tr>
+                            <tr>
+                              <td>Yuri Berry</td>
+                              <td>Chief Marketing Officer (CMO)</td>
+                              <td>New York</td>
+                              <td>40</td>
+                              <td>2009/06/25</td>
+                              <td>$675,000</td>
+                            </tr>
+                            <tr>
+                              <td>Caesar Vance</td>
+                              <td>Pre-Sales Support</td>
+                              <td>New York</td>
+                              <td>21</td>
+                              <td>2011/12/12</td>
+                              <td>$106,450</td>
+                            </tr>
+                            <tr>
+                              <td>Doris Wilder</td>
+                              <td>Sales Assistant</td>
+                              <td>Sidney</td>
+                              <td>23</td>
+                              <td>2010/09/20</td>
+                              <td>$85,600</td>
+                            </tr>
+                            <tr>
+                              <td>Angelica Ramos</td>
+                              <td>Chief Executive Officer (CEO)</td>
+                              <td>London</td>
+                              <td>47</td>
+                              <td>2009/10/09</td>
+                              <td>$1,200,000</td>
+                            </tr>
+                            <tr>
+                              <td>Gavin Joyce</td>
+                              <td>Developer</td>
+                              <td>Edinburgh</td>
+                              <td>42</td>
+                              <td>2010/12/22</td>
+                              <td>$92,575</td>
+                            </tr>
+                            <tr>
+                              <td>Jennifer Chang</td>
+                              <td>Regional Director</td>
+                              <td>Singapore</td>
+                              <td>28</td>
+                              <td>2010/11/14</td>
+                              <td>$357,650</td>
+                            </tr>
+                            <tr>
+                              <td>Brenden Wagner</td>
+                              <td>Software Engineer</td>
+                              <td>San Francisco</td>
+                              <td>28</td>
+                              <td>2011/06/07</td>
+                              <td>$206,850</td>
+                            </tr>
+                            <tr>
+                              <td>Fiona Green</td>
+                              <td>Chief Operating Officer (COO)</td>
+                              <td>San Francisco</td>
+                              <td>48</td>
+                              <td>2010/03/11</td>
+                              <td>$850,000</td>
+                            </tr>
+                            <tr>
+                              <td>Shou Itou</td>
+                              <td>Regional Marketing</td>
+                              <td>Tokyo</td>
+                              <td>20</td>
+                              <td>2011/08/14</td>
+                              <td>$163,000</td>
+                            </tr>
+                            <tr>
+                              <td>Michelle House</td>
+                              <td>Integration Specialist</td>
+                              <td>Sidney</td>
+                              <td>37</td>
+                              <td>2011/06/02</td>
+                              <td>$95,400</td>
+                            </tr>
+                            <tr>
+                              <td>Suki Burks</td>
+                              <td>Developer</td>
+                              <td>London</td>
+                              <td>53</td>
+                              <td>2009/10/22</td>
+                              <td>$114,500</td>
+                            </tr>
+                            <tr>
+                              <td>Prescott Bartlett</td>
+                              <td>Technical Author</td>
+                              <td>London</td>
+                              <td>27</td>
+                              <td>2011/05/07</td>
+                              <td>$145,000</td>
+                            </tr>
+                            <tr>
+                              <td>Gavin Cortez</td>
+                              <td>Team Leader</td>
+                              <td>San Francisco</td>
+                              <td>22</td>
+                              <td>2008/10/26</td>
+                              <td>$235,500</td>
+                            </tr>
+                            <tr>
+                              <td>Martena Mccray</td>
+                              <td>Post-Sales support</td>
+                              <td>Edinburgh</td>
+                              <td>46</td>
+                              <td>2011/03/09</td>
+                              <td>$324,050</td>
+                            </tr>
+                            <tr>
+                              <td>Unity Butler</td>
+                              <td>Marketing Designer</td>
+                              <td>San Francisco</td>
+                              <td>47</td>
+                              <td>2009/12/09</td>
+                              <td>$85,675</td>
+                            </tr>
+                            <tr>
+                              <td>Howard Hatfield</td>
+                              <td>Office Manager</td>
+                              <td>San Francisco</td>
+                              <td>51</td>
+                              <td>2008/12/16</td>
+                              <td>$164,500</td>
+                            </tr>
+                            <tr>
+                              <td>Hope Fuentes</td>
+                              <td>Secretary</td>
+                              <td>San Francisco</td>
+                              <td>41</td>
+                              <td>2010/02/12</td>
+                              <td>$109,850</td>
+                            </tr>
+                            <tr>
+                              <td>Vivian Harrell</td>
+                              <td>Financial Controller</td>
+                              <td>San Francisco</td>
+                              <td>62</td>
+                              <td>2009/02/14</td>
+                              <td>$452,500</td>
+                            </tr>
+                            <tr>
+                              <td>Timothy Mooney</td>
+                              <td>Office Manager</td>
+                              <td>London</td>
+                              <td>37</td>
+                              <td>2008/12/11</td>
+                              <td>$136,200</td>
+                            </tr>
+                            <tr>
+                              <td>Jackson Bradshaw</td>
+                              <td>Director</td>
+                              <td>New York</td>
+                              <td>65</td>
+                              <td>2008/09/26</td>
+                              <td>$645,750</td>
+                            </tr>
+                            <tr>
+                              <td>Olivia Liang</td>
+                              <td>Support Engineer</td>
+                              <td>Singapore</td>
+                              <td>64</td>
+                              <td>2011/02/03</td>
+                              <td>$234,500</td>
+                            </tr>
+                            <tr>
+                              <td>Bruno Nash</td>
+                              <td>Software Engineer</td>
+                              <td>London</td>
+                              <td>38</td>
+                              <td>2011/05/03</td>
+                              <td>$163,500</td>
+                            </tr>
+                            <tr>
+                              <td>Sakura Yamamoto</td>
+                              <td>Support Engineer</td>
+                              <td>Tokyo</td>
+                              <td>37</td>
+                              <td>2009/08/19</td>
+                              <td>$139,575</td>
+                            </tr>
+                            <tr>
+                              <td>Thor Walton</td>
+                              <td>Developer</td>
+                              <td>New York</td>
+                              <td>61</td>
+                              <td>2013/08/11</td>
+                              <td>$98,540</td>
+                            </tr>
+                            <tr>
+                              <td>Finn Camacho</td>
+                              <td>Support Engineer</td>
+                              <td>San Francisco</td>
+                              <td>47</td>
+                              <td>2009/07/07</td>
+                              <td>$87,500</td>
+                            </tr>
+                            <tr>
+                              <td>Serge Baldwin</td>
+                              <td>Data Coordinator</td>
+                              <td>Singapore</td>
+                              <td>64</td>
+                              <td>2012/04/09</td>
+                              <td>$138,575</td>
+                            </tr>
+                            <tr>
+                              <td>Zenaida Frank</td>
+                              <td>Software Engineer</td>
+                              <td>New York</td>
+                              <td>63</td>
+                              <td>2010/01/04</td>
+                              <td>$125,250</td>
+                            </tr>
+                            <tr>
+                              <td>Zorita Serrano</td>
+                              <td>Software Engineer</td>
+                              <td>San Francisco</td>
+                              <td>56</td>
+                              <td>2012/06/01</td>
+                              <td>$115,000</td>
+                            </tr>
+                            <tr>
+                              <td>Jennifer Acosta</td>
+                              <td>Junior Javascript Developer</td>
+                              <td>Edinburgh</td>
+                              <td>43</td>
+                              <td>2013/02/01</td>
+                              <td>$75,650</td>
+                            </tr>
+                            <tr>
+                              <td>Cara Stevens</td>
+                              <td>Sales Assistant</td>
+                              <td>New York</td>
+                              <td>46</td>
+                              <td>2011/12/06</td>
+                              <td>$145,600</td>
+                            </tr>
+                            <tr>
+                              <td>Hermione Butler</td>
+                              <td>Regional Director</td>
+                              <td>London</td>
+                              <td>47</td>
+                              <td>2011/03/21</td>
+                              <td>$356,250</td>
+                            </tr>
+                            <tr>
+                              <td>Lael Greer</td>
+                              <td>Systems Administrator</td>
+                              <td>London</td>
+                              <td>21</td>
+                              <td>2009/02/27</td>
+                              <td>$103,500</td>
+                            </tr>
+                            <tr>
+                              <td>Jonas Alexander</td>
+                              <td>Developer</td>
+                              <td>San Francisco</td>
+                              <td>30</td>
+                              <td>2010/07/14</td>
+                              <td>$86,500</td>
+                            </tr>
+                            <tr>
+                              <td>Shad Decker</td>
+                              <td>Regional Director</td>
+                              <td>Edinburgh</td>
+                              <td>51</td>
+                              <td>2008/11/13</td>
+                              <td>$183,000</td>
+                            </tr>
+                            <tr>
+                              <td>Michael Bruce</td>
+                              <td>Javascript Developer</td>
+                              <td>Singapore</td>
+                              <td>29</td>
+                              <td>2011/06/27</td>
+                              <td>$183,000</td>
+                            </tr>
+                            <tr>
+                              <td>Donna Snider</td>
+                              <td>Customer Support</td>
+                              <td>New York</td>
+                              <td>27</td>
+                              <td>2011/01/25</td>
+                              <td>$112,000</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <th>Name</th>
+                              <th>Position</th>
+                              <th>Office</th>
+                              <th>Age</th>
+                              <th>Start date</th>
+                              <th>Salary</th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- begin::footer -->
+          <footer class="content-footer">
+            <div>© 2023, uTOIP - <a href="#" target="_blank">Telkomsel</a></div>
+            <div>
+              <nav class="nav">
+                <a href="#" class="nav-link">Docs</a>
+                <a href="#" class="nav-link">Change Log</a>
+                <a href="#" class="nav-link">Contact</a>
+              </nav>
+            </div>
+          </footer>
+          <!-- end::footer -->
+        </div>
+      </div>
+    </div>
+    <!-- end::main -->
+
+    <!-- Plugin scripts -->
+    <script src="vendors/bundle.js"></script>
+
+    <!-- DataTable -->
+    <script src="vendors/dataTable/datatables.min.js"></script>
+    <script src="assets/js/examples/datatable.js"></script>
+
+    <!-- Prism -->
+    <script src="vendors/prism/prism.js"></script>
+
+    <script>
+      function toggleDarkLight() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className =
+          currentClass == "dark small-navigation"
+            ? "light small-navigation"
+            : "dark small-navigation";
+      }
+    </script>
+
+    <!-- App scripts -->
+    <script src="assets/js/app.min.js"></script>
+  </body>
+</html>
